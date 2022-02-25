@@ -38,7 +38,7 @@ for token in $tokens; do
         type=$(jq -r ".tokens.${token} | .pipDeploy | .type | values" "$CONFIG_FILE")
         # Deploy Medianizer as Feed
         if [[ "$type" == "median" ]]; then
-            contract=$(dappCreate testchain-medians "Median${token}USD")
+            contract=$(dappCreate dss-testchain-medians "Median${token}USD")
             eval "export VAL_${token}=${contract}"
             logAddr "VAL_${token}" "$(eval "echo ${contract}")"
             signers=$(jq -r ".tokens.${token} | .pipDeploy | .signers | .[]" "$CONFIG_FILE")
@@ -60,20 +60,20 @@ for token in $tokens; do
     else
         eval "export VAL_${token}=${pipAddr}"
         copy osm
-        copy testchain-medians
+        copy dss-testchain-medians
         logAddr "VAL_${token}" "$pipAddr"
     fi
     eval "export PIP_${token}=\$VAL_${token}"
 done
 
 # Deploy Multicall
-MULTICALL=$(dappCreate multicall Multicall)
+MULTICALL=$(dappCreate dss-multicall Multicall)
 logAddr "MULTICALL" "$MULTICALL"
 
 # Deploy Token Faucet
 FAUCET=$(jq -r ".import.faucet | values" "$CONFIG_FILE")
 if [[ -z "$FAUCET" ]]; then
-    FAUCET=$(dappCreate token-faucet RestrictedTokenFaucet)
+    FAUCET=$(dappCreate dss-token-faucet RestrictedTokenFaucet)
     logAddr "FAUCET" "$FAUCET"
     # Allow everyone to use the faucet
     sethSend "$FAUCET" 'hope(address)' "0x0000000000000000000000000000000000000000"
@@ -84,7 +84,7 @@ PROXY_REGISTRY=$(jq -r ".import.proxyRegistry | values" "$CONFIG_FILE")
 if [[ -z "$PROXY_REGISTRY" ]]; then
     PROXY_FACTORY=$(dappCreate ds-proxy DSProxyFactory)
     logAddr "PROXY_FACTORY" "$PROXY_FACTORY"
-    PROXY_REGISTRY=$(dappCreate proxy-registry ProxyRegistry "$PROXY_FACTORY")
+    PROXY_REGISTRY=$(dappCreate dss-proxy-registry ProxyRegistry "$PROXY_FACTORY")
     logAddr "PROXY_REGISTRY" "$PROXY_REGISTRY"
 else
     PROXY_FACTORY=$(seth storage "$PROXY_REGISTRY" 1)
@@ -92,7 +92,7 @@ else
     logAddr "PROXY_FACTORY" "$PROXY_FACTORY"
     logAddr "PROXY_REGISTRY" "$PROXY_REGISTRY"
     copy ds-proxy
-    copy proxy-registry
+    copy dss-proxy-registry
 fi
 
 # Deploy Fabs
@@ -131,7 +131,7 @@ if [[ "$newGovToken" == true ]]; then
     # sethSend "$FAUCET" 'gulp(address)' "$MCD_GOV"
 
     # Use custom authority for the new GOV token
-    GOV_GUARD=$(dappCreate mkr-authority MkrAuthority)
+    GOV_GUARD=$(dappCreate dss-mkr-authority MkrAuthority)
     logAddr "GOV_GUARD" "$GOV_GUARD"
 
     # Set GOV_GUARD as authority of MCD_GOV
@@ -168,23 +168,23 @@ GET_CDPS=$(dappCreate dss-cdp-manager GetCdps)
 logAddr "GET_CDPS" "$GET_CDPS"
 
 # Deploy DsrManager
-DSR_MANAGER=$(dappCreate dsr-manager DsrManager "$MCD_POT" "$MCD_JOIN_DAI")
+DSR_MANAGER=$(dappCreate dss-dsr-manager DsrManager "$MCD_POT" "$MCD_JOIN_DAI")
 logAddr "DSR_MANAGER" "$DSR_MANAGER"
 
 # Deploy OsmMom
-OSM_MOM=$(dappCreate osm-mom OsmMom)
+OSM_MOM=$(dappCreate dss-osm-mom OsmMom)
 logAddr "OSM_MOM" "$OSM_MOM"
 
 # Deploy FlipperMom
-FLIPPER_MOM=$(dappCreate flipper-mom FlipperMom "$MCD_CAT")
+FLIPPER_MOM=$(dappCreate dss-flipper-mom FlipperMom "$MCD_CAT")
 logAddr "FLIPPER_MOM" "$FLIPPER_MOM"
 
 # Deploy ClipperMom
-CLIPPER_MOM=$(dappCreate clipper-mom-optimized ClipperMom "$MCD_SPOT")
+CLIPPER_MOM=$(dappCreate dss-clipper-mom-optimized ClipperMom "$MCD_SPOT")
 logAddr "CLIPPER_MOM" "$CLIPPER_MOM"
 
 # Deploy IlkRegistry
-ILK_REGISTRY=$(dappCreate ilk-registry-optimized IlkRegistry "$MCD_VAT" "$MCD_DOG" "$MCD_CAT" "$MCD_SPOT")
+ILK_REGISTRY=$(dappCreate dss-ilk-registry-optimized IlkRegistry "$MCD_VAT" "$MCD_DOG" "$MCD_CAT" "$MCD_SPOT")
 logAddr "ILK_REGISTRY" "$ILK_REGISTRY"
 
 # As all initial collaterals were deployed, we can remove authority of the deployment contract from the core contracts
@@ -207,7 +207,7 @@ for token in $tokens; do
 done
 
 # Deploy GovActions - Library functions for the Pause
-MCD_GOV_ACTIONS=$(dappCreate dss-deploy-1_2 GovActions)
+MCD_GOV_ACTIONS=$(dappCreate dss-deploy GovActions)
 logAddr "MCD_GOV_ACTIONS" "$MCD_GOV_ACTIONS"
 
 # Deploy Pause Proxy Actions (support contract for executing initial set up of the dss system)
@@ -236,15 +236,15 @@ if [[ -z "$MCD_ADM" ]]; then
     sethSend "$MCD_IOU" 'setOwner(address)' "${MCD_ADM}"
 
     # Deploy Vote Proxy Factory
-    VOTE_PROXY_FACTORY=$(dappCreate vote-proxy VoteProxyFactory "$MCD_ADM")
+    VOTE_PROXY_FACTORY=$(dappCreate dss-vote-proxy VoteProxyFactory "$MCD_ADM")
     logAddr "VOTE_PROXY_FACTORY" "$VOTE_PROXY_FACTORY"
 
     # Deploy PollingEmitter
-    MCD_POLLING_EMITTER=$(dappCreate symbolic-voting PollingEmitter)
+    MCD_POLLING_EMITTER=$(dappCreate dss-symbolic-voting PollingEmitter)
     logAddr "MCD_POLLING_EMITTER" "$MCD_POLLING_EMITTER"
 
     # Deploy Vote Delegate Factory
-    VOTE_DELEGATE_PROXY_FACTORY=$(dappCreate vote-delegate-optimized VoteDelegateFactory "$MCD_ADM" "$MCD_POLLING_EMITTER")
+    VOTE_DELEGATE_PROXY_FACTORY=$(dappCreate dss-vote-delegate-optimized VoteDelegateFactory "$MCD_ADM" "$MCD_POLLING_EMITTER")
     logAddr "VOTE_DELEGATE_PROXY_FACTORY" "$VOTE_DELEGATE_PROXY_FACTORY"
 else
     logAddr "MCD_IOU" "$(seth call "$MCD_ADM" "IOU()(address)")"
@@ -482,7 +482,7 @@ fi
 
 "$LIBEXEC_DIR"/setters/set-ilks-clipper-mom
 
-"$LIBEXEC_DIR"/setters/set-pips-rights
+#"$LIBEXEC_DIR"/setters/set-pips-rights
 
 "$LIBEXEC_DIR"/setters/set-ilks-registry
 

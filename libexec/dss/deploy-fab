@@ -20,23 +20,23 @@
 
 export SETH_ASYNC=yes
 
-VAT_FABtx=$(dappCreate dss-deploy-1_2 VatFab)
-JUG_FABtx=$(dappCreate dss-deploy-1_2 JugFab)
-VOW_FABtx=$(dappCreate dss-deploy-1_2 VowFab)
-CAT_FABtx=$(dappCreate dss-deploy-1_2 CatFab)
+VAT_FABtx=$(dappCreate dss-deploy VatFab)
+JUG_FABtx=$(dappCreate dss-deploy JugFab)
+VOW_FABtx=$(dappCreate dss-deploy VowFab)
+CAT_FABtx=$(dappCreate dss-deploy CatFab)
 DOG_FABtx=$(dappCreate dss-deploy DogFab)
-DAI_FABtx=$(dappCreate dss-deploy-1_2 DaiFab)
-MCD_JOIN_DAI_FABtx=$(dappCreate dss-deploy-1_2 DaiJoinFab)
-FLAP_FABtx=$(dappCreate dss-deploy-1_2 FlapFab)
-FLOP_FABtx=$(dappCreate dss-deploy-1_2 FlopFab)
-FLIP_FABtx=$(dappCreate dss-deploy-1_2 FlipFab)
+DAI_FABtx=$(dappCreate dss-deploy DaiFab)
+MCD_JOIN_DAI_FABtx=$(dappCreate dss-deploy DaiJoinFab)
+FLAP_FABtx=$(dappCreate dss-deploy FlapFab)
+FLOP_FABtx=$(dappCreate dss-deploy FlopFab)
+FLIP_FABtx=$(dappCreate dss-deploy FlipFab)
 CLIP_FABtx=$(dappCreate dss-deploy ClipFab)
 CALC_FABtx=$(dappCreate dss-deploy CalcFab)
-SPOT_FABtx=$(dappCreate dss-deploy-1_2 SpotFab)
-POT_FABtx=$(dappCreate dss-deploy-1_2 PotFab)
+SPOT_FABtx=$(dappCreate dss-deploy SpotFab)
+POT_FABtx=$(dappCreate dss-deploy PotFab)
 END_FABtx=$(dappCreate dss-deploy EndFab)
 ESM_FABtx=$(dappCreate dss-deploy ESMFab)
-PAUSE_FABtx=$(dappCreate dss-deploy-1_2 PauseFab)
+PAUSE_FABtx=$(dappCreate dss-deploy PauseFab)
 
 export SETH_ASYNC=no
 

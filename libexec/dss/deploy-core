@@ -21,12 +21,12 @@
 # If no Governance token is defined, create one
 if [ -z "$MCD_GOV" ]
 then
-    MCD_GOV=$(dappCreate ds-token DSToken '"MKR"')
+    MCD_GOV=$(dappCreate ds-token DSToken '"XKR"')
     logAddr "MCD_GOV" "$MCD_GOV"
 fi
 
 # Create deploy contract
-MCD_DEPLOY=$(dappCreate dss-deploy-optimized-runs-1 DssDeploy)
+MCD_DEPLOY=$(dappCreate dss-deploy DssDeploy)
 logAddr "MCD_DEPLOY" "$MCD_DEPLOY"
 
 sethSend "$MCD_DEPLOY" "addFabs1(address,address,address,address,address,address,address)" "$VAT_FAB" "$JUG_FAB" "$VOW_FAB" "$CAT_FAB" "$DOG_FAB" "$DAI_FAB" "$MCD_JOIN_DAI_FAB"
