@@ -219,15 +219,15 @@
         "url": "https://github.com/beyondDao/dss-cdp-manager"
       }
     },
-    "dss-chain-log_90cf9c0": {
+    "dss-chain-log_0877873": {
       "deps": {
         "ds-test": "ds-test_c5db3fa"
       },
       "name": "dss-chain-log",
       "repo": {
-        "name": "dss-chain-log-90cf9c0",
+        "name": "dss-chain-log-0877873",
         "ref": "HEAD",
-        "rev": "90cf9c0589d56724b94a0d4f9b4af486a2231385",
+        "rev": "0877873346145b90fb3c5223428902098e04067f",
         "url": "https://github.com/beyondDao/dss-chain-log"
       }
     },
@@ -368,15 +368,15 @@
         "url": "https://github.com/beyondDao/dss-ilk-registry"
       }
     },
-    "dss-median_15ab10b": {
+    "dss-median_145eb0a": {
       "deps": {
         "ds-test": "ds-test_c5db3fa"
       },
       "name": "dss-median",
       "repo": {
-        "name": "dss-median-15ab10b",
+        "name": "dss-median-145eb0a",
         "ref": "HEAD",
-        "rev": "15ab10b982a325686c6489ab562bd588e0d24155",
+        "rev": "145eb0a937d30932dedb86d150989504f92026aa",
         "url": "https://github.com/beyondDao/dss-median"
       }
     },
@@ -456,17 +456,17 @@
         "url": "https://github.com/beyondDao/dss-symbolic-voting"
       }
     },
-    "dss-testchain-medians_b53012f": {
+    "dss-median-providers_19522e8": {
       "deps": {
         "ds-test": "ds-test_c5db3fa",
-        "dss-median": "dss-median_15ab10b"
+        "dss-median": "dss-median_145eb0a"
       },
-      "name": "dss-testchain-medians",
+      "name": "dss-median-providers",
       "repo": {
-        "name": "dss-testchain-medians-b53012f",
+        "name": "dss-median-providers-19522e8",
         "ref": "HEAD",
-        "rev": "b53012fe93f86b2a1811214e4e37599cfb959879",
-        "url": "https://github.com/beyondDao/dss-testchain-medians"
+        "rev": "19522e877039774e287958e1c04c85fc1827910c",
+        "url": "https://github.com/beyondDao/dss-median-providers"
       }
     },
     "dss-token-faucet_15a57b8": {
@@ -521,7 +521,7 @@
       "dss-dsr-manager": "dss-dsr-manager_bbe986e",
       "dss-auto-line": "dss-auto-line_5156620",
       "dss-cdp-manager": "dss-cdp-manager_996cb38",
-      "dss-chain-log": "dss-chain-log_90cf9c0",
+      "dss-chain-log": "dss-chain-log_0877873",
       "dss-deploy": "dss-deploy_7b841c6",
       "dss-deploy-pause-proxy-actions": "dss-deploy-pause-proxy-actions_dd787b6",
       "dss-flash": "dss-flash_24b25f2",
@@ -536,7 +536,7 @@
       "dss-osm-mom": "dss-osm-mom_4d03737",
       "dss-proxy-registry": "dss-proxy-registry_d36013e",
       "dss-symbolic-voting": "symbolic-voting_5f9c56f",
-      "dss-testchain-medians": "dss-testchain-medians_b53012f",
+      "dss-median-providers": "dss-median-providers_19522e8",
       "dss-token-faucet": "dss-token-faucet_15a57b8",
       "dss-vote-delegate": "dss-vote-delegate_70efb7d",
       "dss-vote-proxy": "dss-vote-proxy_0044f14"

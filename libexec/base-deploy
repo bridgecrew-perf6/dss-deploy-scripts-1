@@ -18,7 +18,7 @@
 # shellcheck source=lib/common.sh
 . "$LIB_DIR/common.sh"
 
-# Deploy Multicall
+# Deploy ChainLog
 newChangelog=false
 CHANGELOG=$(jq -r ".import.chainlog | values" "$CONFIG_FILE")
 if [[ -z "$CHANGELOG" ]]; then
@@ -38,19 +38,22 @@ for token in $tokens; do
         type=$(jq -r ".tokens.${token} | .pipDeploy | .type | values" "$CONFIG_FILE")
         # Deploy Medianizer as Feed
         if [[ "$type" == "median" ]]; then
-            contract=$(dappCreate dss-testchain-medians "Median${token}USD")
+            contract=$(dappCreate dss-median-providers "Median${token}USD")
             eval "export VAL_${token}=${contract}"
             logAddr "VAL_${token}" "$(eval "echo ${contract}")"
             signers=$(jq -r ".tokens.${token} | .pipDeploy | .signers | .[]" "$CONFIG_FILE")
+
             # Approve oracle price feed providers
             allsigners=()
             for signer in $signers; do
                 allsigners+=("${signer}")
             done
             sethSend "$(eval echo "\$VAL_${token}")" 'lift(address[] memory)' "[$(join "${allsigners[@]}")]"
+
             # Set quorum for Medianizer
             sethSend "$(eval echo "\$VAL_${token}")" 'setBar(uint256)' "$(seth --to-uint256 3)"
         fi
+
         # Deploy DSValue as Feed
         if [[ "${type}" == "value" ]]; then
             contract=$(dappCreate ds-value DSValue)
@@ -60,7 +63,7 @@ for token in $tokens; do
     else
         eval "export VAL_${token}=${pipAddr}"
         copy osm
-        copy dss-testchain-medians
+        copy dss-median-providers
         logAddr "VAL_${token}" "$pipAddr"
     fi
     eval "export PIP_${token}=\$VAL_${token}"

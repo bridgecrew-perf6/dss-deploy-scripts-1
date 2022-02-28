@@ -35,15 +35,20 @@ for token in $tokens; do
             osm=$(dappCreate osm OSM "$(eval echo "\$VAL_${token}")")
             eval "export PIP_${token}=${osm}"
             logAddr "PIP_${token}" "$osm"
+
             # Set OSM delay
             sethSend "$osm" 'step(uint16)' "$osmDelay"
+
             # Whitelist OSM in Medianizer (skip if source is DSValue)
             type=$(jq -r ".tokens.${token} | .pipDeploy | .type | values" "$CONFIG_FILE")
             [[ "$type" == "median" ]] && sethSend "$(eval echo "\$VAL_${token}")" 'kiss(address)' "$osm"
+
             # Whithelist Spotter in OSM
             sethSend "$osm" 'kiss(address)' "$MCD_SPOT"
+
             # Whithelist End in OSM
             sethSend "$osm" 'kiss(address)' "$MCD_END"
+
             # Set osm in spotter ilks
             ilks=$(jq -r ".tokens.${token}.ilks | keys_unsorted[]" "$CONFIG_FILE")
             for ilk in $ilks; do

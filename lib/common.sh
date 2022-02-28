@@ -24,6 +24,7 @@ export NONCE_TMP_FILE
 clean() {
     test -f "$NONCE_TMP_FILE" && rm "$NONCE_TMP_FILE"
 }
+
 if [[ -z "$NONCE_TMP_FILE" && -n "$ETH_FROM" ]]; then
     nonce=$(seth nonce "$ETH_FROM")
     NONCE_TMP_FILE=$(mktemp)
