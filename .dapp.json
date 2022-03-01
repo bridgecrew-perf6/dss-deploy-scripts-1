@@ -287,7 +287,7 @@
         "url": "https://github.com/beyondDao/dss-gem-joins"
       }
     },
-    "dss-proxy-actions_2482da0": {
+    "dss-proxy-actions_f8fb5bc": {
       "deps": {
         "ds-test": "ds-test_c5db3fa",
         "ds-weth": "ds-weth_5b2293d",
@@ -297,9 +297,9 @@
       },
       "name": "dss-proxy-actions",
       "repo": {
-        "name": "dss-proxy-actions-2482da0",
+        "name": "dss-proxy-actions-f8fb5bc",
         "ref": "HEAD",
-        "rev": "2482da02ca0f7f5f4a1fc7484c19b1db2eb8c94e",
+        "rev": "f8fb5bc1cf17b315c4e19171f37359f3db37e5f6",
         "url": "https://github.com/beyondDao/dss-proxy-actions"
       }
     },
@@ -526,7 +526,7 @@
       "dss-deploy-pause-proxy-actions": "dss-deploy-pause-proxy-actions_dd787b6",
       "dss-flash": "dss-flash_24b25f2",
       "dss-gem-joins": "dss-gem-joins_452cb62",
-      "dss-proxy-actions": "dss-proxy-actions_2482da0",
+      "dss-proxy-actions": "dss-proxy-actions_f8fb5bc",
       "dss-vest": "dss-vest_8b10556",
       "dss-flipper-mom": "dss-flipper-mom_580fc37",
       "dss-ilk-registry": "dss-ilk-registry_828b1cf",
