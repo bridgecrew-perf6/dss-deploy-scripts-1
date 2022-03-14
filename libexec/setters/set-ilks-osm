@@ -32,7 +32,7 @@ for token in $tokens; do
         osmDelay=$(jq -r ".tokens.${token} | .pipDeploy | .osmDelay" "$CONFIG_FILE")
         if [[ "$osmDelay" -gt 0 ]]; then
             # Deploy OSM
-            osm=$(dappCreate osm OSM "$(eval echo "\$VAL_${token}")")
+            osm=$(dappCreate dss-osm OSM "$(eval echo "\$VAL_${token}")")
             eval "export PIP_${token}=${osm}"
             logAddr "PIP_${token}" "$osm"
 

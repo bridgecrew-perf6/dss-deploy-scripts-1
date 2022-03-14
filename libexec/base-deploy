@@ -62,7 +62,7 @@ for token in $tokens; do
         fi
     else
         eval "export VAL_${token}=${pipAddr}"
-        copy osm
+        copy dss-osm
         copy dss-median-providers
         logAddr "VAL_${token}" "$pipAddr"
     fi

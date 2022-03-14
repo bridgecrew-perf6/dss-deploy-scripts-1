@@ -9,7 +9,7 @@
         "name": "dss-clipper-mom-1473b44",
         "ref": "HEAD",
         "rev": "1473b448cc9141fb0c56146f8b5b28db57b39739",
-        "url": "https://github.com/beyondDao/dss-clipper-mom"
+        "url": "https://github.com/TakerDao-Fi/dss-clipper-mom"
       }
     },
     "ds-auth_5e447a7": {
@@ -21,7 +21,7 @@
         "name": "ds-auth-5e447a7",
         "ref": "HEAD",
         "rev": "5e447a79353111c56ad619d7023179aeb2acfea1",
-        "url": "https://github.com/beyondDao/ds-auth"
+        "url": "https://github.com/TakerDao-Fi/ds-auth"
       }
     },
     "ds-chief_2235701": {
@@ -36,7 +36,7 @@
         "name": "ds-chief-2235701",
         "ref": "HEAD",
         "rev": "2235701c8016320eb09f782592e071cb13987787",
-        "url": "https://github.com/beyondDao/ds-chief"
+        "url": "https://github.com/TakerDao-Fi/ds-chief"
       }
     },
     "ds-math_22594dd": {
@@ -48,7 +48,7 @@
         "name": "ds-math-22594dd",
         "ref": "HEAD",
         "rev": "22594dd22293e8f922ce86d9a99b9938d1076224",
-        "url": "https://github.com/beyondDao/ds-math"
+        "url": "https://github.com/TakerDao-Fi/ds-math"
       }
     },
     "ds-note_06b6c7d": {
@@ -60,7 +60,7 @@
         "name": "ds-note-06b6c7d",
         "ref": "HEAD",
         "rev": "06b6c7dbfa9bc0221327dfc4c96193eab49af765",
-        "url": "https://github.com/beyondDao/ds-note"
+        "url": "https://github.com/TakerDao-Fi/ds-note"
       }
     },
     "dss-pause_7299095": {
@@ -73,7 +73,7 @@
         "name": "dss-pause-7299095",
         "ref": "HEAD",
         "rev": "7299095cb53f4a679bd4364c2f64b56ad0c6f503",
-        "url": "https://github.com/beyondDao/dss-pause"
+        "url": "https://github.com/TakerDao-Fi/dss-pause"
       }
     },
     "dss-proxy_da51ae6": {
@@ -87,7 +87,7 @@
         "name": "dss-proxy-da51ae6",
         "ref": "HEAD",
         "rev": "da51ae6452756e1da4e8e0fb4a1301d798f3d7eb",
-        "url": "https://github.com/beyondDao/ds-proxy"
+        "url": "https://github.com/TakerDao-Fi/ds-proxy"
       }
     },
     "ds-roles_06f0993": {
@@ -100,7 +100,7 @@
         "name": "ds-roles-06f0993",
         "ref": "HEAD",
         "rev": "06f0993367b3326816ea9a06cec4c73fd393bb88",
-        "url": "https://github.com/beyondDao/ds-roles"
+        "url": "https://github.com/TakerDao-Fi/ds-roles"
       }
     },
     "ds-stop_b34fad8": {
@@ -114,7 +114,7 @@
         "name": "ds-stop-b34fad8",
         "ref": "HEAD",
         "rev": "b34fad84753443bc3246732669e15d62b3b45bad",
-        "url": "https://github.com/beyondDao/ds-stop"
+        "url": "https://github.com/TakerDao-Fi/ds-stop"
       }
     },
     "ds-test_c5db3fa": {
@@ -124,7 +124,7 @@
         "name": "ds-test-c5db3fa",
         "ref": "HEAD",
         "rev": "c5db3fa18192e38b06015eba0472312a72f0b4bc",
-        "url": "https://github.com/beyondDao/ds-test"
+        "url": "https://github.com/TakerDao-Fi/ds-test"
       }
     },
     "ds-thing_a6386a8": {
@@ -139,7 +139,7 @@
         "name": "ds-thing-a6386a8",
         "ref": "HEAD",
         "rev": "a6386a8c94bf25427ae3838a72cb7646c03b3490",
-        "url": "https://github.com/beyondDao/ds-thing"
+        "url": "https://github.com/TakerDao-Fi/ds-thing"
       }
     },
     "ds-token_cbd2b69": {
@@ -153,7 +153,7 @@
         "name": "ds-token-cbd2b69",
         "ref": "HEAD",
         "rev": "cbd2b697b20e67aafab0a6a92b21dac4839aca25",
-        "url": "https://github.com/beyondDao/ds-token"
+        "url": "https://github.com/TakerDao-Fi/ds-token"
       }
     },
     "ds-value_fd8b649": {
@@ -166,7 +166,7 @@
         "name": "ds-value-fd8b649",
         "ref": "HEAD",
         "rev": "fd8b64943b4c09b5fc31d9dc72126438f40d04e8",
-        "url": "https://github.com/beyondDao/ds-value"
+        "url": "https://github.com/TakerDao-Fi/ds-value"
       }
     },
     "ds-weth_5b2293d": {
@@ -178,7 +178,7 @@
         "name": "ds-weth-5b2293d",
         "ref": "HEAD",
         "rev": "5b2293d202e85e58027705b4c40f5a214dc006a5",
-        "url": "https://github.com/beyondDao/ds-weth"
+        "url": "https://github.com/TakerDao-Fi/ds-weth"
       }
     },
     "dss-dsr-manager_bbe986e": {
@@ -191,7 +191,7 @@
         "name": "dss-dsr-manager-bbe986e",
         "ref": "HEAD",
         "rev": "bbe986ee54134862042ac7954ec6c51c51d6e43a",
-        "url": "https://github.com/beyondDao/dss-dsr-manager"
+        "url": "https://github.com/TakerDao-Fi/dss-dsr-manager"
       }
     },
     "dss-auto-line_5156620": {
@@ -203,7 +203,7 @@
         "name": "dss-auto-line-5156620",
         "ref": "HEAD",
         "rev": "5156620fd7b77cc1135830afeafb376e54a38786",
-        "url": "https://github.com/beyondDao/dss-auto-line"
+        "url": "https://github.com/TakerDao-Fi/dss-auto-line"
       }
     },
     "dss-cdp-manager_996cb38": {
@@ -216,7 +216,7 @@
         "name": "dss-cdp-manager-996cb38",
         "ref": "HEAD",
         "rev": "996cb3834c6c6aa8e3ffeb2f1a3d38ae3654dc72",
-        "url": "https://github.com/beyondDao/dss-cdp-manager"
+        "url": "https://github.com/TakerDao-Fi/dss-cdp-manager"
       }
     },
     "dss-chain-log_0877873": {
@@ -228,7 +228,7 @@
         "name": "dss-chain-log-0877873",
         "ref": "HEAD",
         "rev": "0877873346145b90fb3c5223428902098e04067f",
-        "url": "https://github.com/beyondDao/dss-chain-log"
+        "url": "https://github.com/TakerDao-Fi/dss-chain-log"
       }
     },
     "dss-deploy-pause-proxy-actions_dd787b6": {
@@ -242,7 +242,7 @@
         "name": "dss-deploy-pause-proxy-actions-dd787b6",
         "ref": "HEAD",
         "rev": "dd787b617b7867a0c962ccbb082b5f02a7419ef4",
-        "url": "https://github.com/beyondDao/dss-deploy-pause-proxy-actions"
+        "url": "https://github.com/TakerDao-Fi/dss-deploy-pause-proxy-actions"
       }
     },
     "dss-deploy_7b841c6": {
@@ -258,7 +258,7 @@
         "name": "dss-deploy-7b841c6",
         "ref": "HEAD",
         "rev": "7b841c63c79971a83c0b9351869119cc500d9e0e",
-        "url": "https://github.com/beyondDao/dss-deploy"
+        "url": "https://github.com/TakerDao-Fi/dss-deploy"
       }
     },
     "dss-flash_24b25f2": {
@@ -271,7 +271,7 @@
         "name": "dss-flash-24b25f2",
         "ref": "HEAD",
         "rev": "24b25f27f0c905117b2797dcf4d8d14e4d1c0593",
-        "url": "https://github.com/beyondDao/dss-flash"
+        "url": "https://github.com/TakerDao-Fi/dss-flash"
       }
     },
     "dss-gem-joins_452cb62": {
@@ -284,7 +284,7 @@
         "name": "dss-gem-joins-452cb62",
         "ref": "HEAD",
         "rev": "452cb62dfe1c1ff03dc7b1682d537888c7566ef5",
-        "url": "https://github.com/beyondDao/dss-gem-joins"
+        "url": "https://github.com/TakerDao-Fi/dss-gem-joins"
       }
     },
     "dss-proxy-actions_f8fb5bc": {
@@ -300,7 +300,7 @@
         "name": "dss-proxy-actions-f8fb5bc",
         "ref": "HEAD",
         "rev": "f8fb5bc1cf17b315c4e19171f37359f3db37e5f6",
-        "url": "https://github.com/beyondDao/dss-proxy-actions"
+        "url": "https://github.com/TakerDao-Fi/dss-proxy-actions"
       }
     },
     "dss-vest_8b10556": {
@@ -312,7 +312,7 @@
         "name": "dss-vest-8b10556",
         "ref": "HEAD",
         "rev": "8b105562e5c0858dafd80df5a1119c07d048a958",
-        "url": "https://github.com/beyondDao/dss-vest"
+        "url": "https://github.com/TakerDao-Fi/dss-vest"
       }
     },
     "dss-core_4c32241": {
@@ -326,7 +326,7 @@
         "name": "dss-core-4c32241",
         "ref": "HEAD",
         "rev": "4c32241deb63c1a89e837859911120ad5fbd3611",
-        "url": "https://github.com/beyondDao/dss-core"
+        "url": "https://github.com/TakerDao-Fi/dss-core"
       }
     },
     "dss-esm_225ddf2": {
@@ -339,7 +339,7 @@
         "name": "dss-esm-225ddf2",
         "ref": "HEAD",
         "rev": "225ddf29b1515d10ea6d4f9cde5814a73085ce09",
-        "url": "https://github.com/beyondDao/dss-esm"
+        "url": "https://github.com/TakerDao-Fi/dss-esm"
       }
     },
     "dss-flipper-mom_580fc37": {
@@ -351,7 +351,7 @@
         "name": "dss-flipper-mom-580fc37",
         "ref": "HEAD",
         "rev": "580fc3724deb11aa881f8689373e9f66ad3f2ee8",
-        "url": "https://github.com/beyondDao/dss-flipper-mom"
+        "url": "https://github.com/TakerDao-Fi/dss-flipper-mom"
       }
     },
     "dss-ilk-registry_828b1cf": {
@@ -365,7 +365,7 @@
         "name": "dss-ilk-registry-828b1cf",
         "ref": "HEAD",
         "rev": "828b1cf0c10f48d23367c2a229cc5f1e9cc51234",
-        "url": "https://github.com/beyondDao/dss-ilk-registry"
+        "url": "https://github.com/TakerDao-Fi/dss-ilk-registry"
       }
     },
     "dss-median_145eb0a": {
@@ -377,7 +377,7 @@
         "name": "dss-median-145eb0a",
         "ref": "HEAD",
         "rev": "145eb0a937d30932dedb86d150989504f92026aa",
-        "url": "https://github.com/beyondDao/dss-median"
+        "url": "https://github.com/TakerDao-Fi/dss-median"
       }
     },
     "dss-mkr-authority_1bc3c33": {
@@ -389,7 +389,7 @@
         "name": "dss-mkr-authority-1bc3c33",
         "ref": "HEAD",
         "rev": "1bc3c3313841fe863de8401a686491100ac8866e",
-        "url": "https://github.com/beyondDao/dss-mkr-authority"
+        "url": "https://github.com/TakerDao-Fi/dss-mkr-authority"
       }
     },
     "dss-multicall_f241603": {
@@ -401,7 +401,7 @@
         "name": "dss-multicall-f241603",
         "ref": "HEAD",
         "rev": "f241603177d3b68e069ece73f84e619a6b62c371",
-        "url": "https://github.com/beyondDao/dss-multicall"
+        "url": "https://github.com/TakerDao-Fi/dss-multicall"
       }
     },
     "dss-osm-mom_4d03737": {
@@ -414,7 +414,7 @@
         "name": "dss-osm-mom-4d03737",
         "ref": "HEAD",
         "rev": "4d03737f1dd2ff4569043c762987c9c87fe55976",
-        "url": "https://github.com/beyondDao/dss-osm-mom"
+        "url": "https://github.com/TakerDao-Fi/dss-osm-mom"
       }
     },
     "dss-osm_5c6a146": {
@@ -428,7 +428,7 @@
         "name": "dss-osm-5c6a146",
         "ref": "HEAD",
         "rev": "5c6a146075129b38023b03f293220edb51bc5290",
-        "url": "https://github.com/beyondDao/dss-osm"
+        "url": "https://github.com/TakerDao-Fi/dss-osm"
       }
     },
     "dss-proxy-registry_d36013e": {
@@ -441,7 +441,7 @@
         "name": "dss-proxy-registry-d36013e",
         "ref": "HEAD",
         "rev": "d36013e50aac80c58a34d46543ba588c4674912f",
-        "url": "https://github.com/beyondDao/dss-proxy-registry"
+        "url": "https://github.com/TakerDao-Fi/dss-proxy-registry"
       }
     },
     "symbolic-voting_5f9c56f": {
@@ -453,20 +453,20 @@
         "name": "dss-symbolic-voting-161984b",
         "ref": "HEAD",
         "rev": "161984be64698cdddccd53eef07714457cc5bba5",
-        "url": "https://github.com/beyondDao/dss-symbolic-voting"
+        "url": "https://github.com/TakerDao-Fi/dss-symbolic-voting"
       }
     },
-    "dss-median-providers_19522e8": {
+    "dss-median-providers_4b409e7": {
       "deps": {
         "ds-test": "ds-test_c5db3fa",
         "dss-median": "dss-median_145eb0a"
       },
       "name": "dss-median-providers",
       "repo": {
-        "name": "dss-median-providers-19522e8",
+        "name": "dss-median-providers-4b409e7",
         "ref": "HEAD",
-        "rev": "19522e877039774e287958e1c04c85fc1827910c",
-        "url": "https://github.com/beyondDao/dss-median-providers"
+        "rev": "4b409e79adfa2530c3f29500f78178e2fbbc43ba",
+        "url": "https://github.com/TakerDao-Fi/dss-median-providers"
       }
     },
     "dss-token-faucet_15a57b8": {
@@ -479,7 +479,7 @@
         "name": "dss-token-faucet-15a57b8",
         "ref": "HEAD",
         "rev": "15a57b83ee9d934925a350cb1c319538e4d01025",
-        "url": "https://github.com/beyondDao/dss-token-faucet"
+        "url": "https://github.com/TakerDao-Fi/dss-token-faucet"
       }
     },
     "dss-vote-delegate_70efb7d": {
@@ -491,7 +491,7 @@
         "name": "dss-vote-delegate-70efb7d",
         "ref": "HEAD",
         "rev": "70efb7d2409c9a560591f1a381cd2afee7a5bbce",
-        "url": "https://github.com/beyondDao/dss-vote-delegate"
+        "url": "https://github.com/TakerDao-Fi/dss-vote-delegate"
       }
     },
     "dss-vote-proxy_0044f14": {
@@ -504,7 +504,7 @@
         "name": "dss-vote-proxy-0044f14",
         "ref": "HEAD",
         "rev": "0044f1421c55a6e0f5e4f56434f9f8008bc8977c",
-        "url": "https://github.com/beyondDao/dss-vote-proxy"
+        "url": "https://github.com/TakerDao-Fi/dss-vote-proxy"
       }
     }
   },
@@ -536,7 +536,7 @@
       "dss-osm-mom": "dss-osm-mom_4d03737",
       "dss-proxy-registry": "dss-proxy-registry_d36013e",
       "dss-symbolic-voting": "symbolic-voting_5f9c56f",
-      "dss-median-providers": "dss-median-providers_19522e8",
+      "dss-median-providers": "dss-median-providers_4b409e7",
       "dss-token-faucet": "dss-token-faucet_15a57b8",
       "dss-vote-delegate": "dss-vote-delegate_70efb7d",
       "dss-vote-proxy": "dss-vote-proxy_0044f14"

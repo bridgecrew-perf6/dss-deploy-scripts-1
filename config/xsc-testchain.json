@@ -1,0 +1,292 @@
+{
+  "description": "Testchain Deployment",
+  "omniaFromAddr": "0x019afbcE1C05bE822c2Fd3D3d76eEaaf5ac90D0e",
+  "omniaAmount": "100",
+  "pauseDelay": "0",
+  "vat_line": "10000000000",
+  "vow_wait": "0",
+  "vow_dump": "0.01",
+  "vow_sump": "0.1",
+  "vow_bump": "0.1",
+  "vow_hump": "0",
+  "cat_box": "10000",
+  "dog_hole": "10000",
+  "jug_base": "0",
+  "pot_dsr": "1",
+  "end_wait": "0",
+  "esm_min": "50000",
+  "flap_beg": "5",
+  "flap_ttl": "10800",
+  "flap_tau": "172800",
+  "flop_beg": "5",
+  "flop_pad": "50",
+  "flop_ttl": "10800",
+  "flop_tau": "172800",
+  "flash_max": "500000000",
+  "flash_toll": "0.05",
+  "tokens": {
+    "XT": {
+      "import": {
+        "gem": "0x029767c9Cba0c76A492083Cca445c96CDD2934F2"
+      },
+      "joinDeploy": {
+        "src": "GemJoin",
+        "extraParams": []
+      },
+      "pipDeploy": {
+        "osmDelay": "3600",
+        "type": "median",
+        "price": "2.00",
+        "signers": [
+          "0x160762ba964f28D00D0F3894389e7501ECF58bD3",
+          "0x610577c034fF7f6Ba8C8Eb0f485AA1BbB680dc4e",
+          "0x53d69449fCfE451fE30B79a7562Cb96123c27861",
+          "0x78E9d82d2b7111F0673DB9b5F8cc3cBFccF7dbd5",
+          "0xA133AD9F0ebBf7b8Ca78135b7a1b7561e951401a",
+          "0xC2c88E8Ed55Aa1B34E3258204A18935CDB98B6B7",
+          "0x1E467FB24C23d8E818C71AB4815939036a6000ee"
+        ]
+      },
+      "ilks": {
+        "A": {
+          "mat": "150",
+          "line": "1000000000",
+          "autoLine": "0",
+          "autoLineGap": "0",
+          "autoLineTtl": "0",
+          "dust": "10000",
+          "duty": "1.5",
+          "flipDeploy": {
+            "chop": "13",
+            "dunk": "500",
+            "beg": "1",
+            "ttl": "3600",
+            "tau": "3600"
+          }
+        },
+        "B": {
+          "mat": "130",
+          "line": "1000000000",
+          "autoLine": "0",
+          "autoLineGap": "0",
+          "autoLineTtl": "0",
+          "dust": "10000",
+          "duty": "4",
+          "flipDeploy": {
+            "chop": "13",
+            "dunk": "500",
+            "beg": "1",
+            "ttl": "3600",
+            "tau": "3600"
+          }
+        },
+        "C": {
+          "mat": "170",
+          "line": "1000000000",
+          "autoLine": "0",
+          "autoLineGap": "0",
+          "autoLineTtl": "0",
+          "dust": "5000",
+          "duty": "0.5",
+          "flipDeploy": {
+            "chop": "13",
+            "dunk": "500",
+            "beg": "1",
+            "ttl": "3600",
+            "tau": "3600"
+          }
+        }
+      }
+    },
+    "XETH": {
+      "import": {
+        "gem": "0x638a11F31E337F90aAaC084bde0DBe7dC56F9Af7"
+      },
+      "joinDeploy": {
+        "src": "GemJoin",
+        "extraParams": []
+      },
+      "pipDeploy": {
+        "osmDelay": "3600",
+        "type": "median",
+        "price": "2500.00",
+        "signers": [
+          "0x160762ba964f28D00D0F3894389e7501ECF58bD3",
+          "0x610577c034fF7f6Ba8C8Eb0f485AA1BbB680dc4e",
+          "0x53d69449fCfE451fE30B79a7562Cb96123c27861",
+          "0x78E9d82d2b7111F0673DB9b5F8cc3cBFccF7dbd5",
+          "0xA133AD9F0ebBf7b8Ca78135b7a1b7561e951401a",
+          "0xC2c88E8Ed55Aa1B34E3258204A18935CDB98B6B7",
+          "0x1E467FB24C23d8E818C71AB4815939036a6000ee"
+        ]
+      },
+      "ilks": {
+        "A": {
+          "mat": "150",
+          "line": "1000000000",
+          "autoLine": "0",
+          "autoLineGap": "0",
+          "autoLineTtl": "0",
+          "dust": "10000",
+          "duty": "1.5",
+          "flipDeploy": {
+            "chop": "13",
+            "dunk": "500",
+            "beg": "1",
+            "ttl": "3600",
+            "tau": "3600"
+          }
+        },
+        "B": {
+          "mat": "130",
+          "line": "1000000000",
+          "autoLine": "0",
+          "autoLineGap": "0",
+          "autoLineTtl": "0",
+          "dust": "10000",
+          "duty": "4",
+          "flipDeploy": {
+            "chop": "13",
+            "dunk": "500",
+            "beg": "1",
+            "ttl": "3600",
+            "tau": "3600"
+          }
+        },
+        "C": {
+          "mat": "170",
+          "line": "1000000000",
+          "autoLine": "0",
+          "autoLineGap": "0",
+          "autoLineTtl": "0",
+          "dust": "5000",
+          "duty": "0.5",
+          "flipDeploy": {
+            "chop": "13",
+            "dunk": "500",
+            "beg": "1",
+            "ttl": "3600",
+            "tau": "3600"
+          }
+        }
+      }
+    },
+    "XUSDT": {
+      "import": {
+        "gem": "0x42A7d7a13E64B31cCa8f371BC8A5d724038Aa93F"
+      },
+      "joinDeploy": {
+        "src": "GemJoin",
+        "extraParams": []
+      },
+      "pipDeploy": {
+        "osmDelay": "3600",
+        "type": "median",
+        "price": "1",
+        "signers": [
+          "0x160762ba964f28D00D0F3894389e7501ECF58bD3",
+          "0x610577c034fF7f6Ba8C8Eb0f485AA1BbB680dc4e",
+          "0x53d69449fCfE451fE30B79a7562Cb96123c27861",
+          "0x78E9d82d2b7111F0673DB9b5F8cc3cBFccF7dbd5",
+          "0xA133AD9F0ebBf7b8Ca78135b7a1b7561e951401a",
+          "0xC2c88E8Ed55Aa1B34E3258204A18935CDB98B6B7",
+          "0x1E467FB24C23d8E818C71AB4815939036a6000ee"
+        ]
+      },
+      "ilks": {
+        "A": {
+          "mat": "105",
+          "line": "1000000000",
+          "autoLine": "0",
+          "autoLineGap": "0",
+          "autoLineTtl": "0",
+          "dust": "100",
+          "duty": "1",
+          "flipDeploy": {
+            "chop": "10",
+            "dunk": "500",
+            "beg": "1",
+            "ttl": "3600",
+            "tau": "3600"
+          }
+        }
+      }
+    },
+    "XBTC": {
+      "gemDeploy": {
+        "src": "dss-gem-joins/WBTC",
+        "params": ["100000000000000"],
+        "faucetSupply": "99000000000000",
+        "faucetAmount": "100000000"
+      },
+      "joinDeploy": {
+        "src": "GemJoin5",
+        "extraParams": []
+      },
+      "pipDeploy": {
+        "osmDelay": "3600",
+        "type": "median",
+        "price": "19000",
+        "signers": [
+          "0x160762ba964f28D00D0F3894389e7501ECF58bD3",
+          "0x610577c034fF7f6Ba8C8Eb0f485AA1BbB680dc4e",
+          "0x53d69449fCfE451fE30B79a7562Cb96123c27861",
+          "0x78E9d82d2b7111F0673DB9b5F8cc3cBFccF7dbd5",
+          "0xA133AD9F0ebBf7b8Ca78135b7a1b7561e951401a",
+          "0xC2c88E8Ed55Aa1B34E3258204A18935CDB98B6B7",
+          "0x1E467FB24C23d8E818C71AB4815939036a6000ee"
+        ]
+      },
+      "ilks": {
+        "A": {
+          "mat": "150",
+          "line": "1000000",
+          "autoLine": "0",
+          "autoLineGap": "0",
+          "autoLineTtl": "0",
+          "dust": "100",
+          "duty": "20",
+          "flipDeploy": {
+            "chop": "8",
+            "dunk": "500",
+            "beg": "1",
+            "ttl": "3600",
+            "tau": "3600"
+          }
+        },
+        "B": {
+          "mat": "130",
+          "line": "1000000",
+          "autoLine": "0",
+          "autoLineGap": "0",
+          "autoLineTtl": "0",
+          "dust": "100",
+          "duty": "20",
+          "flipDeploy": {
+            "chop": "8",
+            "dunk": "500",
+            "beg": "1",
+            "ttl": "3600",
+            "tau": "3600"
+          }
+        },
+        "C": {
+          "mat": "175",
+          "line": "1000000",
+          "autoLine": "0",
+          "autoLineGap": "0",
+          "autoLineTtl": "0",
+          "dust": "100",
+          "duty": "20",
+          "flipDeploy": {
+            "chop": "8",
+            "dunk": "500",
+            "beg": "1",
+            "ttl": "3600",
+            "tau": "3600"
+          }
+        }
+      }
+    }
+  }
+}

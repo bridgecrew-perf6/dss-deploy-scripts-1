@@ -1,5 +1,5 @@
 alias mainnet-on='export ETH_RPC_URL=https://xsc-datarpc1.xt.com'
-alias testnet-on='export ETH_RPC_URL=https://testnet4.xtvip.top'
+alias testnet-on='export ETH_RPC_URL=https://testnet6.xtvip.top'
 
 export ETH_PASSWORD=/dev/null
 export ETH_GAS=7000000
