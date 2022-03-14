@@ -456,16 +456,16 @@
         "url": "https://github.com/TakerDao-Fi/dss-symbolic-voting"
       }
     },
-    "dss-median-providers_4b409e7": {
+    "dss-median-providers_76b73fd": {
       "deps": {
         "ds-test": "ds-test_c5db3fa",
         "dss-median": "dss-median_145eb0a"
       },
       "name": "dss-median-providers",
       "repo": {
-        "name": "dss-median-providers-4b409e7",
+        "name": "dss-median-providers-76b73fd",
         "ref": "HEAD",
-        "rev": "4b409e79adfa2530c3f29500f78178e2fbbc43ba",
+        "rev": "76b73fd9f593f57e243d4171c2d2cefb0180df8b",
         "url": "https://github.com/TakerDao-Fi/dss-median-providers"
       }
     },
@@ -536,7 +536,7 @@
       "dss-osm-mom": "dss-osm-mom_4d03737",
       "dss-proxy-registry": "dss-proxy-registry_d36013e",
       "dss-symbolic-voting": "symbolic-voting_5f9c56f",
-      "dss-median-providers": "dss-median-providers_4b409e7",
+      "dss-median-providers": "dss-median-providers_76b73fd",
       "dss-token-faucet": "dss-token-faucet_15a57b8",
       "dss-vote-delegate": "dss-vote-delegate_70efb7d",
       "dss-vote-proxy": "dss-vote-proxy_0044f14"

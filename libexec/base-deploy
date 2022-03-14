@@ -485,7 +485,7 @@ fi
 
 "$LIBEXEC_DIR"/setters/set-ilks-clipper-mom
 
-#"$LIBEXEC_DIR"/setters/set-pips-rights
+"$LIBEXEC_DIR"/setters/set-pips-rights
 
 "$LIBEXEC_DIR"/setters/set-ilks-registry
 
