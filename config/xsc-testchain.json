@@ -240,12 +240,12 @@
       "ilks": {
         "A": {
           "mat": "150",
-          "line": "1000000",
+          "line": "100000000",
           "autoLine": "0",
           "autoLineGap": "0",
           "autoLineTtl": "0",
-          "dust": "100",
-          "duty": "20",
+          "dust": "5000",
+          "duty": "1",
           "flipDeploy": {
             "chop": "8",
             "dunk": "500",
@@ -256,12 +256,12 @@
         },
         "B": {
           "mat": "130",
-          "line": "1000000",
-          "autoLine": "0",
-          "autoLineGap": "0",
-          "autoLineTtl": "0",
-          "dust": "100",
-          "duty": "20",
+          "line": "0",
+          "autoLine": "500000000",
+          "autoLineGap": "30000000",
+          "autoLineTtl": "28800",
+          "dust": "30000",
+          "duty": "7",
           "flipDeploy": {
             "chop": "8",
             "dunk": "500",
@@ -272,12 +272,12 @@
         },
         "C": {
           "mat": "175",
-          "line": "1000000",
-          "autoLine": "0",
-          "autoLineGap": "0",
-          "autoLineTtl": "0",
-          "dust": "100",
-          "duty": "20",
+          "line": "0",
+          "autoLine": "1000000000",
+          "autoLineGap": "100000000",
+          "autoLineTtl": "28800",
+          "dust": "7500",
+          "duty": "1.5",
           "flipDeploy": {
             "chop": "8",
             "dunk": "500",
